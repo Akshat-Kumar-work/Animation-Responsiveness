@@ -1,0 +1,52 @@
+.container{
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid red;
+    height: 215px;
+}
+.box{
+    border: 2px solid green;
+    background-color: aqua;
+    width: 212px;
+    height: 212px;
+
+    animation-name:akshat;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+   /* animation-delay: 1s;*/
+   /* animation-direction: reverse; */
+    animation-fill-mode: forwards;
+}
+    /*to justify animation starting and ending state keyframes are used*/
+   /* @keyframes akshat {
+    from{
+        width:212px;
+        
+    }
+    to{
+        width: 800px;
+    }
+    
+    }*/
+
+
+        @keyframes akshat {
+
+        0%{
+            background-color: aqua;
+            width: 212px;
+        }
+
+         50%{
+            width: 35%;
+            background-color: aquamarine;
+        }
+        
+        65%{
+            width: 100%;
+            background-color: blue;
+        }
+    }
+
+    

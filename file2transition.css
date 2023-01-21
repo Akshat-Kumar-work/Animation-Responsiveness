@@ -1,0 +1,26 @@
+.container{
+    height: 500px;
+    width: 500px;
+    background-color: green;
+    border: 3px solid red;
+    display: flex;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    margin: 20px;
+    border: 2px solid orange;
+    background-color: aqua;
+
+    /*transition:1s; /*setting transition duration hover speed*/
+   /* transition-property: background-color; /*setting transiton property to only background color*/
+    /*transition-property: all;*/
+   transition-delay: 2s; /*delay in transition*/
+   transition-property: transform;
+   transition-timing-function: ease; /*starting speed slow ending speed fast*/
+}
+
+.box:hover{
+    background-color: brown;
+    transform:rotate(45deg);
+}

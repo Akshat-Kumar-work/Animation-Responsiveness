@@ -7,13 +7,59 @@
     height: 100vh;
     overflow-y: auto;
     overflow-x: hidden;
+ 
 }
 .container{
-    width:1200px ;
-    margin: 0 auto; /*to set container at center*/
-
+    width: 1200px;
+    margin: 0 auto; /*to place container at center , margin are same from left and center*/
 }
+
 .navbar{
+    padding-top: 1rem;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+   
+}
+
+.logocontainer img{
+    width: 80px;
+}
+
+.logotext{
+    margin-left: -1.2rem;
+    font-size: 28px;
+}
+
+.navitems{
+    display: flex;
+    gap: 2rem;
+    padding: 0 4em;
     
+}
+
+.navitems div {
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.navitems div a{
+
+    color: black;
+    text-decoration: none; /*to remove underline from anchor tag*/
+
+    
+}
+
+.navitems div a:hover{
+    transition: font-weight 0.8s;
+    font-weight: bold;
 }

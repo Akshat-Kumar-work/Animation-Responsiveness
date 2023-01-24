@@ -1,7 +1,9 @@
+@import url("https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&display=swap");
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Be Vietnam Pro", sans-serif;
 }
 #wrapper{
     height: 100vh;
@@ -62,4 +64,274 @@
 .navitems div a:hover{
     transition: font-weight 0.8s;
     font-weight: bold;
+}
+
+.herosection{
+    position: relative;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ gap: 5rem;
+ margin: 4rem auto;
+ padding: 0 1rem;
+ padding-bottom: 8rem;
+}
+
+.faded-text{
+    user-select: none; /*by this no one can select it*/
+    font-size: 7em;
+    color: rgb(231,231,231);
+    font-weight: bold;
+    position:absolute;
+    left: -5%;
+    bottom: -16%;
+ 
+}
+
+.hero-sec-left{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.hero-sec-heading{
+    font-size: 35px;
+    color: #343d68;
+    font-weight: 500;
+}
+
+.hero-sec-subheading{
+    font-size: 45px;
+    line-height: 45px;
+    color: #343d68;
+    font-weight: 500;
+    
+}
+
+.role{
+    color:#4e45d5;
+    font-weight: 800;
+}
+
+.hero-sec-description{
+    margin-top: 1rem;
+    width: 70%;
+    font-weight: 500;
+}
+
+.button{
+    width: fit-content;
+    padding: 0.8rem 2.3rem;
+    box-shadow: 5px 5px 7px 0px #0000003f;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    background-color: #e84949;
+    color: white;
+    z-index: 1;
+    cursor: pointer;
+}
+.button::before{
+    content: " ";
+    background-color: black;
+    position:absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    transform: scaleX(0);
+    transition-property:transform;
+    transition: 0.8s;
+    transform-origin: left;
+}
+.button:hover::before{
+    transform: scaleX(1);
+}
+
+.hero-sec-right{
+    position: relative;
+}
+
+
+
+.userimage{
+   
+padding: 2.5rem;
+filter: grayscale(1);
+
+animation-name: scaleuserimg;
+animation-duration: 5s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
+}
+
+@keyframes scaleuserimg {
+
+    0%{
+        filter:grayscale(0);
+        transform:scale(1);
+    }
+
+    50%{
+        filter:grayscale(1);
+        transform:scale(1.1);
+        box-shadow: 3px 3px 10px; 
+    }
+
+    100%{
+        filter:grayscale(0);
+        transform:scale(1);
+    }
+    
+}
+
+.absolute{
+    position: absolute;
+}
+
+.icon-dots{
+right: 0;
+bottom: -1rem;
+
+animation-name:  dot-moment;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes dot-moment {
+
+    0%{
+       transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-15px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+    
+}
+
+.icon-cube{
+    right: 1em;
+top: -0.8em;
+
+animation-name: cube-rotation;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes cube-rotation {
+
+    0%{
+       transform: rotateY(0deg)  translateY(0px) ;
+    }
+
+    50%{
+
+        transform: rotateY(180deg) translateY(-12px);
+        
+    }
+
+    100%{
+
+        transform: rotateY(360deg) translateY(0px);
+       
+    }
+    
+}
+
+.icon-circle{
+    left: 0;
+    bottom: 0;
+
+    animation-name: cricle-moment;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes cricle-moment {
+
+    0%{
+       left: 0;
+       bottom:0 ;
+    }
+
+    50%{
+        left: 5%;
+        bottom:10% ;
+        
+        
+    }
+
+    100%{
+
+        left: 0;
+       bottom:0 ;
+       
+    }
+    
+}
+
+.icon-zigzags{
+    top: 1.5em;
+    left: -0.3em;
+
+    animation-name: zigzag;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+
+}
+@keyframes zigzag {
+    0%{
+        left: 0;
+        top:0 ;
+     }
+ 
+     50%{
+         left: 5%;
+         top:2% ;
+         
+         
+     }
+ 
+     100%{
+ 
+         left: 0;
+        top:0 ;
+     }
+}
+
+.icon-plus{
+    top: -0.8rem;
+    left: 50%;
+
+    animation-name: pluseffect;
+animation-timing-function: linear;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+}
+@keyframes pluseffect {
+    0%{
+        top: -0.8rem;
+    left: 50%;
+     }
+ 
+     50%{
+         left: 48%;
+         top:3% ;
+         
+         
+     }
+ 
+     100%{
+ 
+        top: -0.8rem;
+    left: 50%;
+     }
 }

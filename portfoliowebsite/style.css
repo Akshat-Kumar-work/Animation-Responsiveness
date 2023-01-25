@@ -154,8 +154,6 @@
     position: relative;
 }
 
-
-
 .userimage{
    
 padding: 2.5rem;
@@ -281,7 +279,7 @@ animation-iteration-count: infinite;
     top: 1.5em;
     left: -0.3em;
 
-    animation-name: zigzag;
+animation-name: zigzag;
 animation-timing-function: linear;
 animation-duration: 5s;
 animation-iteration-count: infinite;
@@ -325,8 +323,7 @@ animation-iteration-count: infinite;
      50%{
          left: 48%;
          top:3% ;
-         
-         
+          
      }
  
      100%{
